@@ -41,6 +41,7 @@ pipeline {
                 echo "hii"
                 env
                 mvn --version
+                hostname
                 '''
             }
         }
