@@ -1,5 +1,8 @@
 pipeline {
     agent any
+    tools {
+        maven 'mvn-396' 
+    }
     environment { 
         Link = "myyahoo.com"
         SSH_CRED = credentials('SSH_CRED')
@@ -23,8 +26,11 @@ pipeline {
         stage('Example3') {
             steps {
                 echo 'three'
-                sh '''echo "hii"
-                    env'''
+                sh '''
+                echo "hii"
+                env
+                mvn --version
+                '''
             }
         }
     }
