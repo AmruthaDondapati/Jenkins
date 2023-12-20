@@ -22,6 +22,8 @@ pipeline {
         stage('Example3') {
             steps {
                 echo 'three'
+                sh '''echo "hii"
+                    env'''
             }
         }
     }
