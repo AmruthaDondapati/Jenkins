@@ -1,13 +1,13 @@
 pipeline {
     agent any
     environment { 
-        URL = "global.com"
+        Link = "myyahoo.com"
     }
     stages {
         stage('Example1') {
             steps {
                 echo 'one'
-                echo "this refers to GLOBAL URL ${URL} "
+                echo "this refers to GLOBAL URL ${Link} "
             }
         }
         stage('Example2') {
