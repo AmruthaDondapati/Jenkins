@@ -11,8 +11,12 @@ pipeline {
             }
         }
         stage('Example2') {
+        environment {
+            Link = "myyahoolocal.com"
+            }
             steps {
                 echo 'two'
+                echo "this refers to LOCAL URL ${Link} "
             }
         }
         stage('Example3') {
