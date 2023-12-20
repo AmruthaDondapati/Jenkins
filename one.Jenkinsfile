@@ -5,10 +5,12 @@ pipeline {
             steps {
                 echo 'one'
             }
+        }
         stage('Example2') {
             steps {
                 echo 'two'
             }
+        }
         stage('Example3') {
             steps {
                 echo 'three'
@@ -16,3 +18,4 @@ pipeline {
         }
     }
 }
+    
