@@ -2,6 +2,7 @@ pipeline {
     agent any
     environment { 
         Link = "myyahoo.com"
+        SSH_CRED = credentials('SSH_CRED')
     }
     stages {
         stage('Example1') {
